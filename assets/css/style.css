@@ -1,3 +1,4 @@
+/* variaveis gerais */
 :root{
     --white: hsl(0, 0%, 100%);
     --paleblue: hsl(230, 100%, 99%);
@@ -15,6 +16,7 @@
     font-size: 15px;
     color: var(--text);
 }
+/* configurações gerais */
 .center{
 display: flex;
 justify-content: center;
@@ -23,22 +25,54 @@ align-items: center;
 .column{
     flex-direction: column;
 }
+/* body */
 body{
     height: 100vh;
     background-color: var(--paleblue);
 }
-
+/* header */
 header{
     background-image: url(/images/pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0px 16px;
-    margin-bottom: px;
+    height: 240px;
 }
 header h1{
     font-size: 26px;
+    margin: 12px 0px;
+}
+header p{
+    margin: 6px 0px;
+}
+/*configurações gerais section*/
+section{
+    background-color: var(--white);
+    width: 90vw;
+}
+/*menu toggle*/
+.toggle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 42px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: var(--text);
+    transition: width 1s linear 1s;
+}
+.toggle_select{
+    justify-content: flex-end;
+}
+.select{
+    height: 14px;
+    width: 14px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: var(--white);
+    border-radius: 50%;
 }
 
+/*  footer   forntendmentor.io*/
 .attribution {
     font-size: 11px;
     text-align: center;
