@@ -141,6 +141,7 @@ section input {
 
 section ul {
     list-style: none;
+    margin-top: 20px;
 }
 
 section ul li {
