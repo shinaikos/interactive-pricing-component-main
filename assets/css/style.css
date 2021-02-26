@@ -1,5 +1,6 @@
 /* variaveis gerais */
-:root{
+
+:root {
     --white: hsl(0, 0%, 100%);
     --paleblue: hsl(230, 100%, 99%);
     --empityslidebar: hsl(224, 65%, 95%);
@@ -7,7 +8,8 @@
     --text: hsl(225, 20%, 60%);
     --ctaback: hsl(227, 35%, 25%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,54 +18,135 @@
     font-size: 15px;
     color: var(--text);
 }
+
 /* configurações gerais */
-.center{
-display: flex;
-justify-content: center;
-align-items: center;
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.column{
+
+.column {
     flex-direction: column;
 }
+
 /* body */
-body{
-    height: 100vh;
+
+body {
+    min-height: 100vh;
     background-color: var(--paleblue);
 }
+
 /* header */
-header{
+
+header {
     background-image: url(/images/pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: center;
     height: 240px;
 }
-header h1{
-    font-size: 26px;
+
+header h1 {
+    font-size: 22px;
     margin: 12px 0px;
+    font-weight: 700;
+    color: black;
 }
-header p{
-    margin: 6px 0px;
+
+header p {
+    margin: 8px 0px;
 }
+
 /*configurações gerais section*/
-section{
+
+section {
     background-color: var(--white);
     width: 90vw;
+    border-radius: 6px;
+    margin: 2px 0px;
 }
-/*menu toggle*/
-.toggle{
+
+section h2 {
+    margin: 24px 0px;
+}
+
+section h2:nth-child(1) {
+    text-transform: uppercase;
+}
+
+.discount span {
+    display: none;
+}
+
+/* preço */
+
+#price {
+    font-size: 32px;
+    color: black;
+    font-weight: 700;
+}
+
+/* input range */
+
+section input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    background-color: #a5f2ea;
+    opacity: 0.7;
+}
+
+section input:hover {
+    opacity: 1;
+}
+
+section input::-webkit-slider-thumb {
+    border-radius: 50%;
+}
+
+section input::-moz-range-thumb {
+    width: 255px;
+    height: 25px;
+    border-radius: 50%;
+    background: blue;
+
+}
+
+/*plano*/
+
+.plano {
+    margin: 24px 0px;
+}
+
+/*button toggle*/
+
+.toggle {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     width: 42px;
     height: 18px;
     border-radius: 9px;
     background-color: var(--text);
     transition: width 1s linear 1s;
+    margin: 0px 8px;
 }
-.toggle_select{
+
+.toggle_select {
     justify-content: flex-end;
 }
-.select{
+
+/* discount*/
+
+.discount {
+    color: rgb(163, 38, 38);
+    background-color: rgb(240, 181, 181);
+    padding: 2px 6px;
+    margin: 0px 6px;
+    border-radius: 8px;
+}
+
+.select {
     height: 14px;
     width: 14px;
     margin-left: 2px;
@@ -72,10 +155,34 @@ section{
     border-radius: 50%;
 }
 
+/* listas*/
+
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    margin: 8px 0px;
+}
+
+/*button*/
+
+.btn {
+    margin: 16px 0px;
+    padding: 12px 38px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--ctaback);
+    color: var(--white);
+    outline: none;
+}
+
 /*  footer   forntendmentor.io*/
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 32px;
 }
 
 .attribution a {
