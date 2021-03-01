@@ -95,6 +95,7 @@ section input {
     cursor: pointer;
     /*box-shadow: 12px 12px 12px black;*/
 }
+
 /*plano*/
 
 .plano {
@@ -158,6 +159,23 @@ section ul li {
     background-color: var(--ctaback);
     color: var(--white);
     outline: none;
+}
+
+/* style acime de de X px*/
+
+@media only screen and (min-width:768px) {
+    section {
+        min-width: 460px;
+        max-width: 540px;
+    }
+    .discount span {
+        display: inline-block;
+        color: #e68e76;
+        background-color: #feede6;
+    }
+    .plano{
+        margin-bottom: 32px;
+    }
 }
 
 /*  footer   forntendmentor.io*/
