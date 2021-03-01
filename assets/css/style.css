@@ -166,7 +166,7 @@ section ul li {
 @media only screen and (min-width:768px) {
     section {
         min-width: 460px;
-        max-width: 540px;
+        max-width: 748px;
     }
     .discount span {
         display: inline-block;
@@ -175,6 +175,14 @@ section ul li {
     }
     .plano{
         margin-bottom: 32px;
+        margin-left: 110px;
+    }
+
+    /* services */
+    .services{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 32px;
     }
 }
 
